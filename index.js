@@ -21,7 +21,6 @@ function boxClicked(e) {
   if (!spaces[id]) {
     spaces[id] = currentPlayer;
     e.target.innerText = currentPlayer;
-
     if (playerHasWon() !== false) {
       playerText.innerHTML = `${currentPlayer} has won!`;
       let winning_blocks = playerHasWon();
